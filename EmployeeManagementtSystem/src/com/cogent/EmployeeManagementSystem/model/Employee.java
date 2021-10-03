@@ -11,7 +11,7 @@ import lombok.Data;
 //@Data
 //@AllArgsConstructor
   public  class Employee {
-	  /implements Comparable<Employee>
+	  //implements Comparable<Employee>
 	  {
 
 	  	
