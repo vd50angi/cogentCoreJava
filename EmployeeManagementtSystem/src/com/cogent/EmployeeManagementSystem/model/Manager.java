@@ -1,8 +1,59 @@
 package com.cogent.EmployeeManagementSystem.model;
 
+import com.cogent.EmployeeManagementSystem.InvalidSalaryExcception;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+
 
 public class Manager extends Employee {
+	
 	private String managerId;
+	private float projectAllow;
+	
+	@Override
+	public float calculateSalary() {
+		// TODO Auto-generated method stub
+		return 3000;
+	}
+	public Manager() throws InvalidSalaryExcception {
+		this("","","",1000.0f,100.0f,"");
+	}
+	public Manager(String empId, String firstName, String lastName, 
+			float empSalary, float projectAllow, String managerId) throws InvalidSalaryException {
+		super(empId,firstName,lastName,empSalary, "VA"); // it will give a call to contructor from parent class
+		this.managerId="manager";
+		this.projectAllow=projectAllow;
+	}
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*private String managerId;
 	private float projectAllow;
 	
 	
@@ -51,4 +102,4 @@ public class Manager extends Employee {
        // String [] tech; I need to fix it its  ot clear to me
 	
 	}
-}
+}*/

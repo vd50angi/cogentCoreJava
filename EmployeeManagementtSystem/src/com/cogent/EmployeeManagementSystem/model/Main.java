@@ -1,5 +1,7 @@
 package com.cogent.EmployeeManagementSystem.model;
 
+import com.cogent.EmployeeManagementSystem.model.Employee;
+
 import com.cogent.EmployeeManagementSystem.service.EmployeeService;
 
 //import com.cogent.EmployeeManagementSystem.service.EmployeeService;
@@ -7,28 +9,93 @@ import com.cogent.EmployeeManagementSystem.service.EmployeeService;
 
 public class Main {
 	
-	public static void main(String[]args) {
-						
-		Employee employee = new Employee();
-		 
+		
+	public static void main(String[] args) {
+        
+		
 		EmployeeService employeeService =EmployeeServiceImpl.getInstance();
-		Employee employee = new Employee("angi001", "dev","angie", 100.0f,"VA");	
+		//EmployeeServiceImpl employeeService = new EmplEmployeeService employeeService =EmployeeServiceImpl.getInstance();oyeeServiceImpl();
 		
-		Employee[] employees = employeeService.getEmployees();
+	String result = null;
+	try {
+		result = employeeService.addEmployee(new Employee("ad001", "angi", "deveg", 1234.0f));
+	} catch (InvalidSalaryException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
 		
-		for (Employee employee2 : employees) {
-			System.out.println(employee2);
-		}
-		employeeService.getEmployeeByName("Angie");
-		employeeService.deleteAllEmployeeByName();
-		employeeService.updateEmployee("Angie", employee);
+	if("success".equals(result)) {
+		System.out.println("employee added successfully");
+	}
+		
+	
+
+	}
+
+
+	
+	
+	
+	
+	
+	
+	
+	//EmployeeServiceImpl employeeService = new EmployeeServiceImpl();
+		//EmployeeService employeeService =EmployeeServiceImpl.getInstance();
+		 String result = null;
+	     //String result = employeeService.addEmployeenew Employee("angi001", "dev","angie", 100.0f,"VA");
+	     //  try {
+				//employee.setEmpSalary(500.f);
+			//} catch (InvalidSalaryException e) {
+				// TODO: handle exception
+			//e.printStackTrace();
+			//}
+				
+			//if("success".equals(result)) 
+			//{	
+			//	System.out.println ("employee added succesfully");
+			//}
+}
+	     
+	     
+	   //Employee[]employees = employeeService.getEmployees() {
+	    			
+	    				
+	     
+	     
+		
+			
+		 
+			
+			//for (Employee employee2 : employees) {
+		//	System.out.println(employee2);
+		//}
+		//employeeService.getEmployeeByName("Angie");
+		//employeeService.deleteAllEmployeeByName();
+		//employeeService.updateEmployee("Angie", employee);
 		
 			
 		}
-	
+}
 	
 	}
 
+	/*
+	public static void main(String[]args) {
+						
+		EmployeeService  service =  EmployeeService.getInstance();
+		
+		
+		Employee employee = new  Employee("001", "Angi", "Deveg", 10000.0f, "VA");
+		
+		String result = service.addEmployee(employee);
+		
+		System.out.println(result);*/
+				
+		
+	
+	
+	
 		
 		//public Employee getEmployeeById(String id) {
 		//	return employeeRepository.getEmployeeById(id);
