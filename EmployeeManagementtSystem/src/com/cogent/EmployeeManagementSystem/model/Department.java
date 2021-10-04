@@ -10,8 +10,7 @@ import lombok.Data;
 
 public class Department {
 	
-	public class Department {
-		
+	
 		private String deptId;
 		private String deptName;
 		private String deptAddress;
