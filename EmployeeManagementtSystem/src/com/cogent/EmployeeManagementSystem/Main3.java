@@ -1,5 +1,6 @@
 package com.cogent.EmployeeManagementSystem;
 
+import com.cogent.EmployeeManagementSystem.exception.InvalidSalaryException;
 import com.cogent.EmployeeManagementSystem.model.Employee;
 
 import java.util.HashSet;
@@ -36,7 +37,7 @@ public class Main3 {
 				;
 		Employee employee3 = null;
 		try {
-			employee3 = new Employee("ab002","abhi","",1000000.0f);
+			employee3 = new Employee("ab002","abhi"," chia",10000.0f);
 		} catch (InvalidSalaryException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

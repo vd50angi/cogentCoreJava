@@ -1,5 +1,11 @@
 package com.cogent.EmployeeManagementSystem;
 
+import java.util.Comparator;
+import java.util.TreeSet;
+
+import com.cogent.EmployeeManagementSystem.exception.InvalidSalaryException;
+import com.cogent.EmployeeManagementSystem.model.Employee;
+
 public class TreeSet_Main {
 
 	public static void main(String[] args) {
@@ -8,6 +14,7 @@ public class TreeSet_Main {
 		
 		
 		Comparator<Employee> comparator= new Comparator<Employee>() {
+			
 			@Override
 			public int compare(Employee o1, Employee o2) {
 				return Float.valueOf(o1.getEmpSalary()).compareTo(Float.valueOf(o2.getEmpSalary()));
@@ -52,8 +59,6 @@ public class TreeSet_Main {
 		//TreeSet<String> set1= new TreeSet<>();
 //		TreeSet<String> set2= new TreeSet<String>();
 		
-
-	}
 
 }	
 	

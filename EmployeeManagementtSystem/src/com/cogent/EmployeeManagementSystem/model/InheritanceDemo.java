@@ -4,9 +4,6 @@ import com.cogent.EmployeeManagementSystem.model.Manager;
 public class InheritanceDemo {
 	
 	
-	
-
-
 		
 		public static final float PI = 3.14f;
 		//static: only one copy

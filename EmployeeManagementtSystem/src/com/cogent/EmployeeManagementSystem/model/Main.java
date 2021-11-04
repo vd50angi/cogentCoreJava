@@ -1,8 +1,10 @@
 package com.cogent.EmployeeManagementSystem.model;
 
+import com.cogent.EmployeeManagementSystem.exception.InvalidSalaryException;
 import com.cogent.EmployeeManagementSystem.model.Employee;
 
 import com.cogent.EmployeeManagementSystem.service.EmployeeService;
+import com.cogent.EmployeeManagementSystem.service.EmployeeServiceImpl;
 
 //import com.cogent.EmployeeManagementSystem.service.EmployeeService;
 //import com.cogent.EmployeeManagementSystem.service.EmployeeServiceImpl;
@@ -32,7 +34,7 @@ public class Main {
 
 	}
 
-
+}
 	
 	
 	
@@ -42,7 +44,7 @@ public class Main {
 	
 	//EmployeeServiceImpl employeeService = new EmployeeServiceImpl();
 		//EmployeeService employeeService =EmployeeServiceImpl.getInstance();
-		 String result = null;
+		// String result = null;
 	     //String result = employeeService.addEmployeenew Employee("angi001", "dev","angie", 100.0f,"VA");
 	     //  try {
 				//employee.setEmpSalary(500.f);
@@ -55,7 +57,7 @@ public class Main {
 			//{	
 			//	System.out.println ("employee added succesfully");
 			//}
-}
+
 	     
 	     
 	   //Employee[]employees = employeeService.getEmployees() {
@@ -75,10 +77,7 @@ public class Main {
 		//employeeService.updateEmployee("Angie", employee);
 		
 			
-		}
-}
 	
-	}
 
 	/*
 	public static void main(String[]args) {

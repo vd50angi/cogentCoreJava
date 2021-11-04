@@ -1,5 +1,7 @@
 package com.cogent.EmployeeManagementSystem.model;
 
+import java.util.Objects;
+
 //import java.util.Objects;
 
 import com.cogent.EmployeeManagementSystem.exception.InvalidSalaryException;
@@ -12,9 +14,7 @@ import lombok.Data;
 //@AllArgsConstructor
   public  class Employee {
 	  //implements Comparable<Employee>
-	  {
-
-	  	
+		
 	  	 @Override
 	  	 public int hashCode() { return Objects.hash(EmployeeID, address,
 	  	 department, empSalary, firstName, lastName); }
@@ -40,7 +40,7 @@ import lombok.Data;
 	  	}
 
 	  	public Employee(String employeeID, String firstName, String lastName, float empSalary, String address)
-	  			throws InvalidSalaryExcception {
+	  			throws InvalidSalaryException {
 	  		super();
 	  		EmployeeID = employeeID;
 	  		this.firstName = firstName;
@@ -89,14 +89,14 @@ import lombok.Data;
 	  		return empSalary;
 	  	}
 
-	  	public void setEmpSalary(float empSalary) throws InvalidSalaryExcception {
+	  	public void setEmpSalary(float empSalary) throws InvalidSalaryException {
 	  		// Salary is not negative
 	  		// if it is negative invalidsalaryexception
 
 	  		if (empSalary > 0)
 	  			this.empSalary = empSalary;
 	  		else
-	  			throw new InvalidSalaryExcception("wrong salary set");
+	  			throw new InvalidSalaryException("wrong salary set");
 	  		// runtime exception is unchecked exception , so dont need throws key word
 	  		// InvalidSalaryException is extend Runtime exception
 	  		// but we still can use throws

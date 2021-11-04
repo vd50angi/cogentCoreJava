@@ -8,9 +8,9 @@ import java.util.List;
 
 import com.cogent.EmployeeManagementSystem.exception.IdNotFoundException;
 import com.cogent.EmployeeManagementSystem.model.Employee;
-import com.cogent.EmployeeManagementSystem.repository.EmployeeRepository;
 import com.cogent.EmployeeManagementSystem.repository.EmployeeRepositoryALImpl;
 import com.cogent.EmployeeManagementSystem.repository.EmployeeRepositoryImpl;
+import com.cogent.emsmongodb.exception.EmployeeRepository;
 
 
 public class EmployeeServiceImpl {

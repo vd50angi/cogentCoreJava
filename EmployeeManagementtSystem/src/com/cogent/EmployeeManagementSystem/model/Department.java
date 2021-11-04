@@ -1,12 +1,7 @@
 package com.cogent.EmployeeManagementSystem.model;
 
-import lombok.AllArgsConstructor;
 
-import lombok.Data;
 
-@Data
-
-@AllArgsConstructor
 
 public class Department {
 	
@@ -19,18 +14,16 @@ public class Department {
 		public Department()
 		
 		{
-			this.deptId = " ";
+			this.deptId = " Admin1";
 			
 		}
 		
 	}
 					
-					
-		}
-	}
+		
 	
-	
+
 	
 	
 
-}
+
